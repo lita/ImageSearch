@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="color_filter_options">
+        <item>Any</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+    </string-array>
+    <string-array name="image_type_options">
+        <item>Any</item>
+        <item>Face</item>
+        <item>Photo</item>
+        <item>Clip art</item>
+        <item>Line drawing</item>
+    </string-array>
+    <string-array name="image_size_options">
+        <item>Any</item>
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+</resources>

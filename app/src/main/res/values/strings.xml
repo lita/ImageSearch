@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Image Search!</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_hint">Enter search query</string>
+    <string name="save_label">Save</string>
+    <string name="search_label">Search</string>
+    <string name="image_title_label">New Text</string>
+    <string name="image_description_label">Image Description</string>
+    <string name="title_activity_image_display">ImageDisplayActivity</string>
+    <string name="title_activity_image_display_activty">Full Image</string>
+    <string name="title_activity_setting_activty">Settings</string>
+    <string name="title_label">Advance search options</string>
+    <string name="image_size_label">Image Size</string>
+    <string name="color_filter_label">Color Filter</string>
+    <string name="save">Save</string>
+    <string name="agree">Ok</string>
+    <string name="neutral">Close</string>
+    <string name="app_title">Image Search!</string>
+    <string name="title_activity_splash">SplashActivity</string>
+</resources>

@@ -1,0 +1,41 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle</item>
+        <item name="md_positive_color">@color/primary</item>
+    </style>
+
+    <!-- Define your custom dialog theme here extending from base -->
+    <style name="SettingsDialogTheme" parent="@style/Theme.AppCompat.Light.Dialog">
+        <!-- Define color properties as desired -->
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="colorPrimaryDark">#000</item>
+        <item name="android:textColorHighlight">@color/light_blue</item>
+        <item name="colorAccent">@color/dark_blue</item>
+        <item name="colorControlNormal">@color/dark_blue</item>
+        <!-- Define window properties as desired -->
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowTitleBackgroundStyle">@color/primary</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
+
+    <style name="DialogWindowTitle" parent="Base.DialogWindowTitle.AppCompat">
+        <item name="android:background">@color/white</item>
+        <item name="android:textAppearance">@style/DialogWindowTitleText</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+
+    <style name="DialogWindowTitleText" parent="@android:style/TextAppearance.DialogWindowTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+</resources>

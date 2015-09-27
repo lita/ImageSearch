@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_view_border"
+    android:layout_height="match_parent">
+
+        <com.joooonho.SelectableRoundedImageView
+            android:layout_width="match_parent"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:paddingTop="1dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            app:sriv_left_top_corner_radius="7dip"
+            app:sriv_right_top_corner_radius="7dip"
+            app:sriv_left_bottom_corner_radius="0dip"
+            app:sriv_right_bottom_corner_radius="0dip"
+            android:adjustViewBounds="true"
+            android:id="@+id/ivImage" />
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/image_title_label"
+            android:gravity="center"
+            android:id="@+id/tvTitle" />
+</LinearLayout>
