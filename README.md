@@ -1,6 +1,6 @@
-# Project 2 - *Name of App Here*
+# Project 2 - *Image Search*
 
-**Name of your app** is an android app that allows a user to search for images on web using simple filters. The app utilizes [Google Image Search API](https://developers.google.com/image-search/). Please note that API has been officially deprecated as of May 26, 2011.
+**Image Search** is an android app that allows a user to search for images on web using simple filters. The app utilizes [Google Image Search API](https://developers.google.com/image-search/). Please note that API has been officially deprecated as of May 26, 2011.
 
 Time spent: **18** hours spent in total
 
