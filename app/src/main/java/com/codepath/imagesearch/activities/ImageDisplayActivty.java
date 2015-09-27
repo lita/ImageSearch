@@ -36,15 +36,14 @@ public class ImageDisplayActivty extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_display_activty);
         ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setElevation(0);
-            actionBar.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.shape_actionbar));
-            actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-            actionBar.setCustomView(R.layout.actionbar_title);
-            TextView tvTitle = (TextView) findViewById(R.id.tvAction);
-            tvTitle.setText("Full Image");
-        }
+        actionBar.setElevation(0);
+        actionBar.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.shape_actionbar));
+        actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        actionBar.setCustomView(R.layout.actionbar_title);
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        TextView tvTitle = (TextView) findViewById(R.id.tvAction);
+        tvTitle.setText("Full Image");
+
         ImageResult imageResult = getIntent().getParcelableExtra("imageResult");
         TouchImageView ivImageResult = (TouchImageView) findViewById(R.id.ivImageResult);
 

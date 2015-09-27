@@ -61,7 +61,6 @@ public class SplashActivity extends AppCompatActivity implements SettingsDialog.
                 Intent i = new Intent(SplashActivity.this, MainActivity.class);
                 i.putExtra("settings", settings);
                 startActivity(i);
-                finish();
                 return true;
             }
 

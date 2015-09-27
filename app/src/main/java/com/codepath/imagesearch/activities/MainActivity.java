@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity implements SettingsDialog.Se
         getSupportActionBar().setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.shape_actionbar));
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.actionbar_title);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         settings = getIntent().getParcelableExtra("settings");
         queryImage(settings.query, 0, true);
     }
