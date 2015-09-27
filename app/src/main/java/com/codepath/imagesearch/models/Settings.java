@@ -7,7 +7,7 @@ import android.os.Parcelable;
  * Created by litacho on 9/23/15.
  */
 public class Settings implements Parcelable {
-    public Setting imageType;
+    public Setting safeSearch;
     public Setting imageColor;
     public Setting imageSize;
     public String sitesearch;
@@ -15,18 +15,16 @@ public class Settings implements Parcelable {
 
     public Settings() {
         this.imageColor = new Setting();
-        this.imageType = new Setting();
+        this.safeSearch = new Setting();
         this.imageSize = new Setting();
     }
 
     public void setImageType(String imageType) {
-        this.imageType.viewText = imageType;
-        if (imageType == "Clip art") {
-            this.imageType.urlText= "clipart";
-        } else if (imageType == "Line drawing") {
-            this.imageType.urlText = "lineart";
+        this.safeSearch.viewText = imageType;
+        if (imageType.equals("On")) {
+            this.safeSearch.urlText= "active";
         } else {
-            this.imageType.urlText = imageType.toLowerCase();
+            this.safeSearch.urlText = "moderate";
         }
     }
 
@@ -47,7 +45,7 @@ public class Settings implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeParcelable(this.imageType, 0);
+        dest.writeParcelable(this.safeSearch, 0);
         dest.writeParcelable(this.imageColor, 0);
         dest.writeParcelable(this.imageSize, 0);
         dest.writeString(this.sitesearch);
@@ -55,7 +53,7 @@ public class Settings implements Parcelable {
     }
 
     protected Settings(Parcel in) {
-        this.imageType = in.readParcelable(Setting.class.getClassLoader());
+        this.safeSearch = in.readParcelable(Setting.class.getClassLoader());
         this.imageColor = in.readParcelable(Setting.class.getClassLoader());
         this.imageSize = in.readParcelable(Setting.class.getClassLoader());
         this.sitesearch = in.readString();

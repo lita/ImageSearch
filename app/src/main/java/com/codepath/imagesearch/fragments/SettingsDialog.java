@@ -71,7 +71,7 @@ public class SettingsDialog extends DialogFragment {
         sImageColorOptions.setSelection(
                 this.getPositionFromArray(settings.imageColor.viewText, colorOption));
         sImageTypeOptions.setSelection(
-                this.getPositionFromArray(settings.imageType.viewText, typeOptions));
+                this.getPositionFromArray(settings.safeSearch.viewText, typeOptions));
 
         etSiteType.setText(settings.sitesearch);
         getDialog().setTitle("Advance Search Options");

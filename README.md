@@ -59,6 +59,7 @@ The api for color and type were working when I started this project, but mid-way
 - [Material Dialog](https://github.com/afollestad/material-dialogs) - Easy way to theme dialog boxes with material design.
 - [SelectableRoundedImageView](https://github.com/pungrue26/Selectable Rounded ImageView) - Library to set the roundedness on individual corners for ImageView
 - [Android Staggered View](https://github.com/etsy/AndroidStaggeredGrid) - Etsy's library for staggering different size items in columns
+- [Touch Image View](https://github.com/MikeOrtiz/TouchImageView) - A library to handle pinch, zoom and panning an image.
 
 ## License
 

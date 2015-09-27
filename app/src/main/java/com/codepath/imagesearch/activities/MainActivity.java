@@ -147,8 +147,8 @@ public class MainActivity extends AppCompatActivity implements SettingsDialog.Se
         AsyncHttpClient client = new AsyncHttpClient();
         String searchUrl = "https://ajax.googleapis.com/ajax/services/search/images?v=1.0&rsz=8&q=" + query;
 
-        if (settings.imageType.urlText != "any") searchUrl += "&imgtyp=" + settings.imageType.urlText;
-        if (settings.imageColor.urlText != "any") searchUrl += "&imgcolorp=" + settings.imageColor.urlText;
+        if (settings.safeSearch.urlText != "any") searchUrl += "&safe=" + settings.safeSearch.urlText;
+        if (settings.imageColor.urlText != "any") searchUrl += "&imgc=" + settings.imageColor.urlText;
         if (settings.imageSize.urlText != "any") searchUrl += "&imgsz=" + settings.imageSize.urlText;
 
         if (settings.sitesearch != null) {

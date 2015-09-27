@@ -2,16 +2,12 @@
 <resources>
     <string-array name="color_filter_options">
         <item>Any</item>
-        <item>Red</item>
-        <item>Blue</item>
-        <item>Yellow</item>
+        <item>Color</item>
+        <item>Gray</item>
     </string-array>
     <string-array name="image_type_options">
-        <item>Any</item>
-        <item>Face</item>
-        <item>Photo</item>
-        <item>Clip art</item>
-        <item>Line drawing</item>
+        <item>On</item>
+        <item>Off</item>
     </string-array>
     <string-array name="image_size_options">
         <item>Any</item>

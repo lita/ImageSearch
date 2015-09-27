@@ -98,7 +98,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Image Type"
+            android:text="Safe Search"
             android:id="@+id/tvImageTypeLabel"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
